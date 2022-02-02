@@ -1,0 +1,45 @@
+.footer {
+  padding-top: 53px;
+  height: 290px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  background-color: #1e4776;
+  color: #7e9ec9;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    & > * {
+      max-width: 352px;
+      // flex-grow: 1;
+    }
+  }
+
+  &__title {
+    margin-top: -7px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+  }
+  &__subtitle {
+    min-width: 350px;
+  }
+
+  &__social {
+    color: var(--color-white);
+    ul {
+      max-width: 274px;
+    }
+    p {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 18px;
+    border: 3px solid var(--color-white);
+    color: var(--color-white);
+  }
+}

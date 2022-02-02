@@ -1,0 +1,15 @@
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    transition: transform 0.2s ease-in;
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      transform: translateY(-5px);
+    }
+  }
+}

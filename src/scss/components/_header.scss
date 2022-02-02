@@ -1,0 +1,40 @@
+.hero {
+  position: relative;
+  padding: 328px 0 326px 0;
+  margin-bottom: 80px;
+  color: var(--color-white);
+  background-image: url(../img/hero-bg.jpg);
+  @include bg-cover;
+  background-color: #576c87;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130%;
+  }
+  p {
+    margin: 0 auto;
+    max-width: 510px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  &__btn {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in;
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      bottom: 22px;
+    }
+  }
+}
